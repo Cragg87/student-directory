@@ -3,8 +3,8 @@
 def print_menu
   puts "1. Input the students"
   puts "2. Show the students"
-  puts "3. Save the list to students.csv"
-  puts "4. Load the list from students.csv"
+  puts "3. Save the list to file"
+  puts "4. Load list from file"
   puts "9. Exit" # 9 because we'll be adding more items
 end
 
@@ -100,5 +100,6 @@ def startup_load_students
   end
 end
 
+puts File.read(__FILE__)
 startup_load_students
 interactive_menu
